@@ -1,0 +1,169 @@
+html {
+    background-color: hsl(314, 74%, 92%);
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: rgb(243, 213, 218);
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: slateblue;
+    text-align: center;
+
+}
+
+.header-bar h1 {
+    color: slateblue;
+    text-align: center;
+}
+
+footer .highlight {
+    background-color: palevioletred;
+}
+
+/* .logo {
+    max-width: 5%;
+    height: auto;
+    border-radius: 50%;
+} */
+
+/* padding is adding space inside the box, margin is space outside the box.
+so without setting box size to border box, the box seems larger (need to add the padding and border). 
+add the border box setting to make sure the outside of the box measures up to the width and height specified in the code */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
+
+.main-content {
+
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.skirt-content {
+
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-m {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:400px;
+    height: 300px;
+    box-sizing: border-box;
+    float: left
+
+}
+
+.box-n {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    width:400px;
+    height: 300px;
+    float: right;
+}
+
+.box-f {
+    margin-top: 50px;
+    width: auto;
+}
+
+.fix {
+    clear: both;
+}
+
+
+/* the clearfix method is not very clean, so use a utility clear class as show below instead to 
+make parent div recognise the flating children. */
+
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
+/* To style the navigation buttons */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.login li {
+    float: right;
+}
+.login a {
+    display: block;
+    color: slateblue;
+    padding: 10px 20px;
+    border-bottom: none;
+}
+
+nav a:hover {
+    background-color:  hsl(314, 74%, 92%);;
+}
+
+.gif {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 20;
+    color: snow;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 10px 35px;
+}
+
+.caption p {
+    text-align: center;
+}
