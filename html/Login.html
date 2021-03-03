@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login Page</title>
+    </head>
+
+
+
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Community page</a></li>
+                <li><a href="Our story.html">Our story</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <form>
+            <label for="username">Username:</label>
+            <input id="username" type="text" name="username">
+            <!--the for= and id= associates the two tags, type defines the input type, name is what will be passed to the server-->
+            <label for="password">Password:</label>
+            <input id="password" type="text" name="password">
+
+            <!--could also nest the input tag inside the label, e.g.
+                <label>Username<input type="text"></label>
+                but it's not suitable for all screen devices.-->
+            <input type="submit" value="Go">
+        </form>
+    </body>
+
+</html>
