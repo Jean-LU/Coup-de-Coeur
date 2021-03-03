@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Contact Us</title>
+        <link rel="stylesheet" href="../CSS/screen.css">
     </head>
     
     <body>
@@ -19,13 +20,22 @@
                     <li><a href="Our story.html">Our story</a></li>
                 </ul>
             </nav>
-            <ul>
-                <li>email: info@coupdecoeur.com</li>
-                <li>phone: 0881234567</li>
-                <li>WhatsApp: 0687654321</li>
-                <li>Instagram: coupdecoeur</li>
-                <li>Facebook: coupdecoeur</li>
-            </ul>
+            <div class="box-1">
+                 <ul>
+                    <li><a>email: info@coupdecoeur.com</a></li>
+                    <li><a>phone: 0881234567</a></li>
+                    <li><a>P.O. box: Amsterdam</a></li>
+                </ul>
+            </div>
+            <div class="box-2">
+                <ul>
+                    <li><a>WhatsApp: 0687654321</a></li>
+                    <li><a>Instagram: coupdecoeur</a></li>
+                    <li><a>Facebook: coupdecoeur</a></li>
+                </ul>
+                 
+            </div>
+           
     
         </section>
         
@@ -42,9 +52,14 @@
 
             <label for="phonenumber">Phone number:</label>
             <input id="phonenumber" type="tel" name="phonenumber">
-            
-            <label for="message">Message for us:</label>
-            <textarea id="message" name="message"></textarea>
+
+            <fieldset>
+                <legend>What's your prefered way to be contacted?</legend>
+                <label for="byphone">By phone</label>
+                <input type="checkbox" id="byphone" name="contactmethod" value="byphone">
+                <label for="byemail">By email</label>
+                <input type="checkbox" id="byemail" name="contactmethod" value="byemail">
+            </fieldset>
 
             <label for="topic">What's the issue about?</label>
             <select id="topic" name="feedbacktopic">
@@ -56,13 +71,12 @@
                 <option value="other">Other</option>
             </select>
 
-            <fieldset>
-                <legend>What's your prefered way to be contacted?</legend>
-                <label for="byphone">By phone</label>
-                <input type="checkbox" id="byphone" name="contactmethod" value="byphone">
-                <label for="byemail">By email</label>
-                <input type="checkbox" id="byemail" name="contactmethod" value="byemail">
-            </fieldset>
+            <div class="text-box">
+                <label for="message">Message for us:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            
+            
 
         </section>
     </body>

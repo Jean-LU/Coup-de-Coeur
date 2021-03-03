@@ -120,9 +120,9 @@ make parent div recognise the flating children. */
 }
 
 /* To style the navigation buttons */
-nav ul {
+ul {
     list-style: none;
-    padding: 0;
+    padding: 10px 20px;
     margin: 0;
     
 }
@@ -152,4 +152,85 @@ nav a:hover {
     max-width: 100%;
     height: auto;
 
+}
+
+/* To style tables */
+
+table th {
+    text-align: left;
+    background-color: palevioletred;
+    text-shadow: rgb(0, 0, 0, .4);
+}
+
+table th,
+table td {
+    border: 1px solid palevioletred;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table tbody tr:nth-child(odd) td{
+    background-color: hsl(314, 74%, 92%);
+}
+
+.col-1 {
+    width: 30%;
+}
+
+.col-2,
+.col-3 {
+    width: 35%;
+}
+
+/* table.shipping tr :nth-child(2),
+table.shipping tr :nth-child(3) {
+    font-size: 110%;
+} */
+
+/*to style contact form*/
+
+.box-1,
+.box-2 {
+    width: 50%;
+    display: block;
+    float: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: hsl(314, 74%, 92%);
+    margin-bottom: 20px;
+
+}
+
+input[type="email"] {
+    width: 50%;
+    display: inline;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+input[type="tel"] {
+    width: 20%;
+    display: inline;
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    padding-bottom: 50px;
+    margin-top: 10px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+}
+
+select {
+    margin-bottom: 30px;
+    margin-left: 10px;
 }
