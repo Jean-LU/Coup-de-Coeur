@@ -151,19 +151,5 @@ nav a:hover {
     display: block;
     max-width: 100%;
     height: auto;
-    position: relative;
 
-}
-
-.caption {
-    position: absolute;
-    top: 0;
-    left: 20;
-    color: snow;
-    background-color: rgba(0, 0, 0, .5);
-    padding: 10px 35px;
-}
-
-.caption p {
-    text-align: center;
 }
